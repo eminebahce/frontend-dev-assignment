@@ -18,8 +18,8 @@ class SearchBox extends Component {
         this.setState({active: !this.state.active})
     }
 
-    handleChange = (e) => {
-        this.setState({search: e.target.value})
+    handleChange = (event) => {
+        this.setState({search: event.target.value})
     }
 
     resetSearch = () => {
@@ -29,8 +29,8 @@ class SearchBox extends Component {
     delayedCallBack = _.debounce(()=>{
         axios.get(`http://localhost:5000/search?q=${this.state.search}`)
             .then(response =>
-                this.setState({results: response.data.suggestions.filter(a => a.searchterm.includes(this.state.search))}))
-            .catch(error => console.log(error.message))
+                this.setState({results: response.data.suggestions.filter(searchedItem => searchedItem.searchterm.includes(this.state.search))}))
+            .catch(error => console.log(error))
     }, 1000);
 
 
@@ -48,7 +48,7 @@ class SearchBox extends Component {
                                onFocus={this.setActive}
                                onChange={(e) => this.handleChange(e)}
                                placeholder={this.props.placeholder}
-                        /> {console.log(this.state)}
+                        />
                         {this.state.search &&
                         <button className="clear-input"
                                 type="reset"
