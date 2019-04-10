@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Suggestions /> component renders sugestions list should render without error 1`] = `
+<ul
+  data-test="suggestions"
+/>
+`;

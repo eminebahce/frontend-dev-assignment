@@ -1,0 +1,21 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #818389;
+}
+
+.app {
+    display: block;
+    padding: 16px;
+    max-width: 600px;
+    margin: 16px auto;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+.app_title {
+    font-weight: 300;
+    margin-top: 0;
+    color: #131815;
+}

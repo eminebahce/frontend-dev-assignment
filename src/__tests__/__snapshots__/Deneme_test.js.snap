@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox /> component renders ReviewStarRating element should not return error 1`] = `
+<div
+  data-test="search-box"
+>
+  <form>
+    <input
+      aria-label="input search"
+      className="input-field sc-bdVaJa hbuiSn"
+      data-test="input-search"
+      name="input"
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyUp={[Function]}
+      placeholder={undefined}
+      type="text"
+      value=""
+    />
+     
+    
+    <div
+      className="sc-bwzfXH jEqMiu"
+    >
+      <ul
+        data-test="suggestions"
+      />
+    </div>
+  </form>
+</div>
+`;
